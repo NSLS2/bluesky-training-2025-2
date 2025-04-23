@@ -1,0 +1,3 @@
+Test during class.
+
+Test line added via GH interface.
