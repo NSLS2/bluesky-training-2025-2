@@ -3,8 +3,3 @@ repos:
   rev: 23.7.0
   hooks:
     - id: black
-- repo: https://github.com/dfm/black_nbconvert
-  rev: v0.3.0 # Use the latest version of black_nbconvert
-  hooks:
-    - id: black_nbconvert
-      files: \.ipynb$
