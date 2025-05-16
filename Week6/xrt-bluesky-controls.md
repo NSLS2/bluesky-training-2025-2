@@ -91,3 +91,8 @@ See how blop agent is defined: degrees of freedom, objectives, digestion.
 Run optimization routine in bluesky console.
 
 ```run_mirror_optimization()```
+
+When completed, blop will show some stats:
+![blop_stats](images/blop_opt.png)
+
+Try your own beamline model!
