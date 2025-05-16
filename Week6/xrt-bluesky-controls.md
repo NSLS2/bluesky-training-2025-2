@@ -1,9 +1,11 @@
 # Using bluesky to control and optimize a virtual beamline
 
 ## xrt as a beamline simulation package
-xrt is an open-source python library for synchrotron beamline simulation. It provides a broad
+[xrt](https://xrt.readthedocs.io/) is an open-source python library for synchrotron beamline simulation. It provides a broad
 collection of pre-defined optical elements (shapes) and materials, as well as a set of GUI tools to
 prepare and interact with the beamline model.
+
+![xrt_gui](images/xrt_qook.png)
 
 Recently we've added EPICS support to control beamline model (WARNING! Development code, release planned in June 2025).
 This enables simple integration with ophyd and bluesky.
@@ -43,6 +45,8 @@ Clone the bluesky integration [examples](https://github.com/yxrmz/blop-xrt-examp
 We'll try running a simple model with two meridionally bent mirrors. Navigate to the examples location and run
 
 ```python trace_KB_glow.py```
+
+![xrt_gui](images/xrt_glow.png)
 
 Now let's enable EPICS support.
 Uncomment the 'epicsPrefix' in the beamLine.glow() call.
