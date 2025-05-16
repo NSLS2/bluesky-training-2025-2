@@ -28,7 +28,7 @@ This enables simple integration with ophyd and bluesky.
 
 
 ## xrt installation
-Let's start with a fresh conda evironment
+Let's start with a fresh conda environment
 
 ```bash
 conda create -p path python=3.11
