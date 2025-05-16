@@ -1,0 +1,73 @@
+Demonstration 2025/05/16
+========================
+
+GitHub Action Beamline Integration Test
+---------------------------------------
+1. Go to https://github.com/NSLS2/gha-beamline-integration-test
+    - Walkthrough the `action.yml`
+    - Show `spoof_beamline.py`
+2. Go to https://github.com/NSLS2/test-beamline-profiles
+    - Show the workflow that contains all of the profiles being tested
+    - Show how many currently pass (yikes!)
+3. Go to https://github.com/NSLS2/nsls2-collection-tiled/
+    - Show the release process for new conda environments
+4. Go to https://github.com/NSLS2/csx-profile-collection
+    - Show how we use the GHA to test code
+    - Go through the development workflow
+        - Make a change to csx-profile-collection somewhere with an obvious error
+        - Push the change to GitHub
+        - Open a pull request
+        - Watch how the test fails
+        - Correct the error, push, and observe success
+
+
+CSX Development Environment for AXIS Detector
+---------------------------------------------
+1. Setup common environment
+    - `conda activate 2025-2.0-py311-tiled`
+    - `source environment.sh`
+2. Setup local services
+    - Redis
+    - MongoDB
+    - Check tiled profile config
+3. Start the Black Hole IOC
+4. Start the ADSim IOC with Phoebus
+    - `docker compose up`
+5. Load IPython profile
+    - `%run -i .ci/drop-in.py`
+6. Run AXIS detector plans
+
+
+CMS Development Environment for Pilatus Detector and Motor Control
+------------------------------------------------------------------
+1. Setup common environment
+    - `conda activate 2025-2.0-py311-tiled`
+    - `source environment.sh`
+2. Setup local services
+    - Redis
+    - MongoDB
+    - Check tiled profile config
+2. Start the Black Hole IOC
+3. Start the ADSim IOC with Phoebus
+    - `docker compose up`
+4. Apply Auto-settings
+    - `./.ci/apply-autosettings.sh`
+5. Load IPython profile
+    - `%run -i .ci/drop-in.py`
+6. Run plans that include motors and detectors
+    - `RE(bp.count([pilatus2M], num=100))`
+    - `sam.gotoOrigin()`
+    - `sam.align()` runs forever since this is a low fidelity simulation
+    - Other commands:
+        - sam.measure(1)
+        - sam.measureIncidentAngle(0.12, exposure_time=5)
+        - sam.xr(1)
+        - sam.thr(0.1)
+        - sam.thabs(0.2)
+        - pwd
+        - cms.setMetadata()
+        - sam.measure(1)
+        - cms.modeMeasurement()
+        - wbs()
+        - sam.measure(1)
+
