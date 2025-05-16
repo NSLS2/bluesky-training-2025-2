@@ -1,3 +1,5 @@
+# Using bluesky to control and optimize a virtual beamline
+
 ## xrt as a beamline simulation package
 xrt is an open-source python library for synchrotron beamline simulation. It provides a broad
 collection of pre-defined optical elements (shapes) and materials, as well as a set of GUI tools to
@@ -30,7 +32,8 @@ Uncomment the 'epicsPrefix' in the beamLine.glow() call.
 
 If we have Phoebus installed, we can already control some parameters of the mirrors and also control the simulation workflow.
 Let's open the xrt_screen.bob in Phoebus.
-![Diagram](images/phoebus_xrt.png)
+
+![xrt_screen_bob](images/phoebus_xrt.png)
 
 ## Control the model with ophyd and bluesky
 
@@ -42,11 +45,11 @@ and use IPython startup files.
 
 Let's see how xrt objects are wrapped in ophyd classes (10-motors.py, 20-detectors.py)
  
-We can change virtual mirror positions and scan virtual motors!
+We can change virtual mirror positions and scan virtual motors! Let's disable auto-update, as the scan will controll the trigger.
 
 ```RE(bp.scan([xrt_screen], mirror_hor.R, 15000, 25000, 100))```
 
-Or even run a grid scan:
+Or even a grid scan:
 
 ```RE(bp.grid_scan([xrt_screen], mirror_hor.R, 19000, 22000, 10, mirror_vert.R, 36000, 39000, 10))```
 
