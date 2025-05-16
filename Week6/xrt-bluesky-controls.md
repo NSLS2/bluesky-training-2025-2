@@ -64,7 +64,7 @@ Uncomment the 'epicsPrefix' in the `beamLine.glow()` call.
 ```
 
 If we have Phoebus installed, we can already control some parameters of the mirrors and also control the simulation workflow.
-Let's open the xrt_screen.bob in Phoebus.
+Let's open the `xrt_screen.bob` in Phoebus.
 
 ![xrt_screen_bob](images/phoebus_xrt.png)
 
