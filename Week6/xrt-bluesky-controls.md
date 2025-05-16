@@ -86,7 +86,7 @@ Start a bluesky session with
 ipython --ipython-dir=ipython_sim --profile=collection_xrt --matplotlib=qt
 ```
  
-We can change virtual mirror positions and scan virtual motors! Let's disable auto-update, as the scan will controll the trigger.
+We can change virtual mirror positions and scan virtual motors! Let's disable auto-update, as the scan will control the trigger.
 
 ```ipython
 RE(bp.scan([xrt_screen], mirror_hor.R, 15000, 25000, 100))
