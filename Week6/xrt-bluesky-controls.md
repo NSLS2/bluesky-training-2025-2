@@ -57,7 +57,7 @@ python trace_KB_glow.py
 ![xrt_gui](images/xrt_glow.png)
 
 Now let's enable EPICS support.
-Uncomment the 'epicsPrefix' in the beamLine.glow() call.
+Uncomment the 'epicsPrefix' in the `beamLine.glow()` call.
 
 ```python
     beamLine.glow(v2=True, epicsPrefix='TST')
