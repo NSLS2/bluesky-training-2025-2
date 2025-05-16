@@ -70,7 +70,7 @@ Let's open the `xrt_screen.bob` in Phoebus.
 
 ## Control the model with ophyd and bluesky
 
-First let's install bluesky
+First, let's install bluesky
 
 ```bash
 pip install bluesky ipython databroker ophyd h5py pyepics
