@@ -8,6 +8,23 @@ prepare and interact with the beamline model.
 Recently we've added EPICS support to control beamline model (WARNING! Development code, release planned in June 2025).
 This enables simple integration with ophyd and bluesky.
 
+## Proposed tutorial directory structure
+```tutorial-top-level
+    \blop-xrt-examples
+        trace_KB_glow.py
+        xrt_screen.bob
+    \py311 (conda env)
+    \xrt-new_glow
+    \ipython_sim
+        \profile_collection_xrt
+            \startup
+                00-startup.py
+                10-motors.py
+                20-detectors.py
+                90-blop.py
+```
+
+
 ## xrt installation
 Let's start with a fresh conda evironment
 
@@ -41,9 +58,13 @@ First let's install bluesky
 
 ```pip install bluesky ipython databroker ophyd h5py pyepics```
 
-and use IPython startup files.
+and use IPython [startup files](https://github.com/yxrmz/profile_collection_xrt).
 
 Let's see how xrt objects are wrapped in ophyd classes (10-motors.py, 20-detectors.py)
+
+Start a bluesky session with
+
+```ipython --ipython-dir=ipython_sim --profile=collection_xrt --matplotlib=qt```
  
 We can change virtual mirror positions and scan virtual motors! Let's disable auto-update, as the scan will controll the trigger.
 
