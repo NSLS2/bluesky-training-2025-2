@@ -30,7 +30,7 @@ This enables simple integration with ophyd and bluesky.
 Let's start with a fresh conda environment
 
 ```bash
-conda create -n xrt-bluesky python=3.11 -y
+conda create -c conda-forge -n xrt-bluesky python=3.11 -y
 ```
 
 Clone [xrt/new_glow](https://github.com/kklmn/xrt/tree/new_glow) and pip install from source.
