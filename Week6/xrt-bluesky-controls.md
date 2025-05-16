@@ -15,7 +15,6 @@ This enables simple integration with ophyd and bluesky.
     \blop-xrt-examples
         trace_KB_glow.py
         xrt_screen.bob
-    \py311 (conda env)
     \xrt-new_glow
     \ipython_sim
         \profile_collection_xrt
