@@ -78,7 +78,7 @@ pip install bluesky ipython databroker ophyd h5py pyepics
 
 and use IPython [startup files](https://github.com/yxrmz/profile_collection_xrt).
 
-Let's see how xrt objects are wrapped in ophyd classes (10-motors.py, 20-detectors.py)
+Let's see how xrt objects are wrapped in ophyd classes (`10-motors.py`, `20-detectors.py`)
 
 Start a bluesky session with
 
