@@ -59,15 +59,15 @@ CMS Development Environment for Pilatus Detector and Motor Control
     - `sam.gotoOrigin()`
     - `sam.align()` runs forever since this is a low fidelity simulation
     - Other commands:
-        - sam.measure(1)
-        - sam.measureIncidentAngle(0.12, exposure_time=5)
-        - sam.xr(1)
-        - sam.thr(0.1)
-        - sam.thabs(0.2)
-        - pwd
-        - cms.setMetadata()
-        - sam.measure(1)
-        - cms.modeMeasurement()
-        - wbs()
-        - sam.measure(1)
+        - `sam.measure(1)`
+        - `sam.measureIncidentAngle(0.12, exposure_time=5)`
+        - `sam.xr(1)`
+        - `sam.thr(0.1)`
+        - `sam.thabs(0.2)`
+        - `pwd`
+        - `cms.setMetadata()`
+        - `sam.measure(1)`
+        - `cms.modeMeasurement()`
+        - `wbs()`
+        - `sam.measure(1)`
 
