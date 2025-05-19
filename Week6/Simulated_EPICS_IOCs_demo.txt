@@ -25,7 +25,7 @@ CSX Development Environment for AXIS Detector
 ---------------------------------------------
 1. Setup common environment
     - `conda activate 2025-2.0-py311-tiled`
-    - `source environment.sh`
+    - `source csx-profile-collection/iocs/csx-epics-containers/environment.sh`
 2. Setup local services
     - Redis
     - MongoDB
@@ -42,7 +42,7 @@ CMS Development Environment for Pilatus Detector and Motor Control
 ------------------------------------------------------------------
 1. Setup common environment
     - `conda activate 2025-2.0-py311-tiled`
-    - `source environment.sh`
+    - `source cms-epics-containers/environment.sh`
 2. Setup local services
     - Redis
     - MongoDB
