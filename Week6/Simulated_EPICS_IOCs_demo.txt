@@ -14,7 +14,7 @@ GitHub Action Beamline Integration Test
 4. Go to https://github.com/NSLS2/csx-profile-collection
     - Show how we use the GHA to test code
     - Go through the development workflow
-        - Make a change to csx-profile-collection somewhere with an obvious error
+        - Make a change to `csx-profile-collection` somewhere with an obvious error
         - Push the change to GitHub
         - Open a pull request
         - Watch how the test fails
