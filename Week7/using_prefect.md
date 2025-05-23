@@ -1,5 +1,11 @@
 # Prefect
 
+**Presenter**: Abby Giles
+
+**Materials**:
+
+- [Slides](https://brookhavenlab-my.sharepoint.com/:p:/g/personal/agiles_bnl_gov/EVkVBRSUZ8JFj6FGgpuS_ykB90FDfuuUKlPAWZ-FgG0PrA?e=qJFRvs)
+
 ## Setup
 
 1. Log into VDI and open a terminal.
